@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+    transition: 0.3s;
+}
+
+.btn img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #7c3aed;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topic {
+    color: #b794f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.topic:hover {
+    color: #c4b5fd;
+    text-shadow: 0 0 8px #8b5cf6;
+}
+
+
+/* Анимация появления контента */
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Частицы */
+.particle {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: radial-gradient(circle, #a78bfa, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.8;
+    box-shadow: 0 0 6px #8b5cf6;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
